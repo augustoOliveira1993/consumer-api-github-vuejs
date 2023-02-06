@@ -25,9 +25,6 @@ export const useDarmodeStore = defineStore({
         }
     }),
     getters: {
-        GET_DARKMODE() {
-            return localStorage.getItem('currentChannel') === 'light' ? this.lightTheme : this.darkTheme;
-        },
 
     },
     actions: {
