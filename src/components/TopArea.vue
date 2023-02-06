@@ -126,7 +126,8 @@ onMounted(() => {
   <header>
     <div class="theme-area">
       <div>ASA Quality System</div>
-      <button @click="changeTheme" class="chage-theme-btn" :style="{ background: theme.colors.themeBtn }" type="button">
+      {{ theme.colors.themeBtn }}
+      <button @click="changeTheme" class="chage-theme-btn" :style="{ color: theme.colors.themeBtn }" type="button">
         <div v-if="!lightMode">
           <span>DARK</span>
           <img src="/assets/icon-moon.svg" alt="dark mode"/>
@@ -173,7 +174,7 @@ header {
   color: #744bc5;
 }
 
-.chage-theme-btn {
+button.chage-theme-btn {
   display: flex;
   align-items: center;
   border: none;
@@ -185,7 +186,7 @@ header {
   cursor: pointer;
 }
 
-.chage-theme-btn img {
+button.chage-theme-btn img {
   margin-left: 1.6rem;
 }
 
