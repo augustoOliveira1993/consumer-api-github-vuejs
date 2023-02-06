@@ -126,7 +126,6 @@ onMounted(() => {
   <header>
     <div class="theme-area">
       <div>ASA Quality System</div>
-      {{ theme.colors.themeBtn }}
       <button @click="changeTheme" class="chage-theme-btn" :style="{ color: theme.colors.themeBtn }" type="button">
         <div v-if="!lightMode">
           <span>DARK</span>
